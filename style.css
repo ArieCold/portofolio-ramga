@@ -1,0 +1,49 @@
+/* Custom Styles & Glassmorphism */
+body {
+    background-color: #080c14;
+    color: #f1f5f9;
+}
+.glass-card {
+    background: rgba(19, 27, 46, 0.75);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.glass-nav {
+    background: rgba(8, 12, 20, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.btn-gradient {
+    background: linear-gradient(135deg, #7928ca 0%, #4f46e5 100%);
+    box-shadow: 0 4px 20px -2px rgba(121, 40, 202, 0.4);
+}
+.btn-gradient:hover {
+    box-shadow: 0 6px 24px 0px rgba(121, 40, 202, 0.6);
+}
+.avatar-circle {
+    background: linear-gradient(135deg, #ffb703 0%, #fb8500 100%);
+    box-shadow: 0 0 50px -10px rgba(251, 133, 0, 0.35);
+}
+/* Network particle canvas positioning */
+#network-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+.typing-cursor {
+    display: inline-block;
+    width: 3px;
+    background-color: #ff9f1c;
+    margin-left: 4px;
+    animation: blink 0.8s infinite;
+}
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
